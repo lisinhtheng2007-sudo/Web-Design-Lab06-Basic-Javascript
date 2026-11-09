@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive With Flex layout</title>
+    <style>
+        .big,.small{
+            display: none;
+        }
+        @media(min-width: 350px) and (max-width: 516px){
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .small{
+                display: block;
+                background-color: red;
+                padding: 1rem;
+                color: white;
+            }
+        }
+        @media(min-width: 516px) and (max-width: 792px){
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .big{
+                display: block;
+                background-color: green;
+                padding: 1rem;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL 🥺</span>
+            <span class="big">I'm BIG 😡</span>
+        </div>
+    </div>
+</body>
+</html>

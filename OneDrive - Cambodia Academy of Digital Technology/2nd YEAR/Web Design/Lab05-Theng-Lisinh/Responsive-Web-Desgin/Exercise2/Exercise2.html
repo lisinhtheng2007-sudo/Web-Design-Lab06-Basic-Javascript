@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <style>
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            background-color: black;
+            padding: 0.5rem;
+        }
+        .features{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
+        .setting{
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .features{
+                display: none;
+            }
+            .setting{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <p>Logo</p>
+        <div class="features">
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>Contact</p>
+        </div>
+        <div class="setting">=</div>
+    </div>
+</body>
+</html>
